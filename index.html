@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="imagenes/iconoloto2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
@@ -14,11 +15,7 @@
 <body>
 	<nav class="menu">
 		<label class="logo">Sanitatem mentis</label>
-		<label>
-			<input type="checkbox">
-			<p>Night</p>
-			<span class="check"></span>
-		</label>
+		<img src="imagenes/moon.png" id="icon">
 		<ul class="items">
 			<li class="active"><a href="index.html">Inicio</a></li>
 			<li><a href="consejos.html">Consejos</a></li>
@@ -36,5 +33,22 @@
 			<h2>A continuación te dejamos una lista de temas que te pueden interesar</h2>
 		</b>
 	</div>
+
+<script type="text/javascript">
+	var icon = document.getElementById('icon')
+	icon.onclick = function()
+	{
+		document.body.classList.toggle("dark-theme")
+		if (document.body.classList.contains("dark-theme"))
+		{
+			icon.src = "imagenes/sun.png";
+		}
+		else
+		{
+			icon.src = "imagenes/moon.png";
+		}
+	}
+</script>
+
 </body>
 </html>
