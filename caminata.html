@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="imagenes/iconoloto2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
@@ -32,7 +33,10 @@
 			<h2>Caminata</h2><br>
 			<h3>Beneficios de caminar unos 30 minutos diarios:</h3><br>
 			<p>La vida sedentaria es uno de los factores de riesgo para padecer diversas enfermedades cardiovasculares, respiratorias o musculo-esqueléticas. Introducir algo tan sencillo como una caminata diaria puede ayudarnos a prevenir dolencias y contribuir además a nuestra salud mental.</p><br><br>
-			<p>Si más adelante prefieres realizar ejercicios más intensos, solicita consejo de un entrenador, debes saber que cada persona puede realizar diferentes tipos de ejercicios, de acuerdo a la edad, peso corporal y enfermedades que pueda padecer. El ejercicio debe llevarse a cabo de manera segura, aprovechando todos los beneficios sin poner en riesgo tu salud.</p>
+			<p>Si más adelante prefieres realizar ejercicios más intensos, solicita consejo de un entrenador, debes saber que cada persona puede realizar diferentes tipos de ejercicios, de acuerdo a la edad, peso corporal y enfermedades que pueda padecer. El ejercicio debe llevarse a cabo de manera segura, aprovechando todos los beneficios sin poner en riesgo tu salud.</p><br>
+			<img class="imagen" src="imagenes/caminataperrodark.png" id="img1">
+			<img class="imagen" src="imagenes/caminatadark.png" id="img2">
+			<img class="imagen" src="imagenes/caminatasportdark.png" id="img3">
 		</b>
 	</div>
 
@@ -44,13 +48,27 @@
 		if (document.body.classList.contains("dark-theme"))
 		{
 			icon.src = "imagenes/sun.png";
+			img1.src = "imagenes/caminataperrolight.png";
+			img2.src = "imagenes/caminatalight.png";
+			img3.src = "imagenes/caminatasportlight.png";
 		}
 		else
 		{
 			icon.src = "imagenes/moon.png";
+			img1.src = "imagenes/caminataperrodark.png";
+			img2.src = "imagenes/caminatadark.png";
+			img3.src = "imagenes/caminatasportdark.png";
 		}
 	}
 </script>
+
+<!---Pie de pagina--->
+<footer>
+	Derechos Reservados &copy; 2021 <br>
+	Diseñado por: Ariel Marrone <br>
+	Email: arielitopco@gmail.com <br>
+	www.SanitatemMentis.com
+</footer>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="imagenes/iconoloto2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
@@ -47,6 +48,7 @@
 		<b>
 			<h2 id="musica_alegre">Música alegre</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/mejoresplaylistsspotify/playlist/3ck7KjH34H20a48Ew37roz" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
+			<img class="imagen" src="imagenes/alegredark.png" id="img1"><br><br>
 			<a href="#musica">Música</a>
 		</b>
 	</div>
@@ -54,6 +56,7 @@
 		<b>
 			<h2 id="musica_relajante">Música relajante</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/fznbluw9qp0e4ngibg8gv7hg0/playlist/5PMWGkEFUn5dJCyTmJDbPz" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
+			<img class="imagen" src="imagenes/relajantedark.png" id="img2"><br><br>
 			<a href="#musica">Música</a>
 		</b>
 	</div>
@@ -61,6 +64,7 @@
 		<b>
 			<h2 id="musica_estudiar">Música para estudiar</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/3wmeikrvlohaynughu48ga5tj/playlist/2zNxoFBLarndPyyXgB4WqD" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
+			<img class="imagen" src="imagenes/estudiardark.png" id="img3"><br><br>
 			<a href="#musica">Música</a>
 		</b>
 	</div>
@@ -68,6 +72,7 @@
 		<b>
 			<h2 id="musica_trabajar">Música para trabajar</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/4nbksnrdo6ex1p1lqyttfsapz/playlist/2tqIFiAv8lDA6sCI4GecFn" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
+			<img class="imagen" src="imagenes/trabajardark.png" id="img4"><br><br>
 			<a href="#musica">Música</a>
 		</b>
 	</div>
@@ -75,6 +80,7 @@
 		<b>
 			<h2 id="musica_bailar">Música para bailar</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/12155830533/playlist/6wGRWbSKGuyx5FmUqZ95ou" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
+			<img class="imagen" src="imagenes/bailardark.png" id="img5"><br><br>
 			<a href="#musica">Música</a>
 		</b>
 	</div>
@@ -82,6 +88,7 @@
 		<b>
 			<h2 id="musica_entrenar">Música para entrenar</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/yjuirb4urpu1n14rb2moovo9b/playlist/6HTb8D0hYPBEmxRj9fosmA" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
+			<img class="imagen" src="imagenes/entrenardark.png" id="img6"><br><br>
 			<a href="#musica">Música</a>
 		</b>
 	</div>
@@ -94,13 +101,33 @@
 		if (document.body.classList.contains("dark-theme"))
 		{
 			icon.src = "imagenes/sun.png";
+			img1.src = "imagenes/alegrelight.png";
+			img2.src = "imagenes/relajantelight.png";
+			img3.src = "imagenes/estudiarlight.png";
+			img4.src = "imagenes/trabajarlight.png";
+			img5.src = "imagenes/bailarlight.png";
+			img6.src = "imagenes/entrenarlight.png";
 		}
 		else
 		{
 			icon.src = "imagenes/moon.png";
+			img1.src = "imagenes/alegredark.png";
+			img2.src = "imagenes/relajantedark.png";
+			img3.src = "imagenes/estudiardark.png";
+			img4.src = "imagenes/trabajardark.png";
+			img5.src = "imagenes/bailardark.png";
+			img6.src = "imagenes/entrenardark.png";
 		}
 	}
 </script>
+
+<!---Pie de pagina--->
+<footer>
+	Derechos Reservados &copy; 2021 <br>
+	Diseñado por: Ariel Marrone <br>
+	Email: arielitopco@gmail.com <br>
+	www.SanitatemMentis.com
+</footer>
 
 </body>
 </html>
