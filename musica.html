@@ -9,28 +9,33 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script src="https://kit.fontawesome.com/ca55ade7b8.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="app.js" defer=""></script>
 	<title>Sanitatem Mentis</title>
 </head>
 <body>
+	<!--<div id="progressbar"></div>
+	<div id="scrollPath"></div>-->
 	<nav class="menu">
-		<label class="logo">Sanitatem mentis</label>
-		<img src="imagenes/moon.png" id="icon">
+		<label class="logo">𝒮𝒶𝓃𝒾𝓉𝒶𝓉𝑒𝓂 ℳ𝑒𝓃𝓉𝒾𝓈</label>
+		<button class="switch" id="switch">
+			<span><i class="fas fa-sun"></i></span>
+			<span><i class="fas fa-moon"></i></span>
+		</button>
 		<ul class="items">
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="consejos.html">Consejos</a></li>
-			<li class="active"><a href="musica.html">Musica</a></li>
-			<li><a href="meditacion.html">Meditacion</a></li>
+			<li class="active"><a href="musica.html">Música</a></li>
+			<li><a href="meditacion.html">Meditación</a></li>
 			<li><a href="caminata.html">Caminata</a></li>
-			
 		</ul>
 		<span class="boton_menu">
 			<i class="icon-menu"></i>
 		</span>
 	</nav>
 	<div class="text">
-		<b>
-			<h2 id="musica">Playlists de música que te van a gustar</h2><br>
+			<h2 id="musica">𝑃𝑙𝑎𝑦𝑙𝑖𝑠𝑡𝑠 𝑑𝑒 𝑚𝑢𝑠𝑖𝑐𝑎 𝑞𝑢𝑒 𝑡𝑒 𝑣𝑎𝑛 𝑎 𝑔𝑢𝑠𝑡𝑎𝑟</h2><br>
+			<p class="hv">
 			<a href="#musica_alegre">Alegre</a>
 			    
 			<a href="#musica_relajante">Relajante</a><br><br>
@@ -40,94 +45,69 @@
 			   
 			<a href="#musica_bailar">Para bailar</a><br><br>
 			<a href="#musica_entrenar">Entrenamiento</a>
-			
-
-		</b>
+			</p>
 	</div>
 	<div class="text">
 		<b>
-			<h2 id="musica_alegre">Música alegre</h2><br>
+			<h2 id="musica_alegre">𝑀𝑢𝑠𝑖𝑐𝑎 𝑎𝑙𝑒𝑔𝑟𝑒</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/mejoresplaylistsspotify/playlist/3ck7KjH34H20a48Ew37roz" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
-			<img class="imagen" src="imagenes/alegredark.png" id="img1"><br><br>
-			<a href="#musica">Música</a>
+			<p class="hv"><img class="imagen" src="imagenes/alegredark.png" id="imagen1"><br><br>
+			<a href="#musica">Música</a></p>
 		</b>
 	</div>
 	<div class="text">
 		<b>
-			<h2 id="musica_relajante">Música relajante</h2><br>
+			<h2 id="musica_relajante">𝑀𝑢𝑠𝑖𝑐𝑎 𝑟𝑒𝑙𝑎𝑗𝑎𝑛𝑡𝑒</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/fznbluw9qp0e4ngibg8gv7hg0/playlist/5PMWGkEFUn5dJCyTmJDbPz" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
-			<img class="imagen" src="imagenes/relajantedark.png" id="img2"><br><br>
-			<a href="#musica">Música</a>
+			<p class="hv"><img class="imagen" src="imagenes/relajantedark.png" id="imagen2"><br><br>
+			<a href="#musica">Música</a></p>
 		</b>
 	</div>
 	<div class="text">
 		<b>
-			<h2 id="musica_estudiar">Música para estudiar</h2><br>
+			<h2 id="musica_estudiar">𝑀𝑢𝑠𝑖𝑐𝑎 𝑝𝑎𝑟𝑎 𝑒𝑠𝑡𝑢𝑑𝑖𝑎𝑟</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/3wmeikrvlohaynughu48ga5tj/playlist/2zNxoFBLarndPyyXgB4WqD" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
-			<img class="imagen" src="imagenes/estudiardark.png" id="img3"><br><br>
-			<a href="#musica">Música</a>
+			<p class="hv"><img class="imagen" src="imagenes/estudiardark.png" id="imagen3"><br><br>
+			<a href="#musica">Música</a></p>
 		</b>
 	</div>
 	<div class="text">
 		<b>
-			<h2 id="musica_trabajar">Música para trabajar</h2><br>
+			<h2 id="musica_trabajar">𝑀𝑢𝑠𝑖𝑐𝑎 𝑝𝑎𝑟𝑎 𝑡𝑟𝑎𝑏𝑎𝑗𝑎𝑟</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/4nbksnrdo6ex1p1lqyttfsapz/playlist/2tqIFiAv8lDA6sCI4GecFn" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
-			<img class="imagen" src="imagenes/trabajardark.png" id="img4"><br><br>
-			<a href="#musica">Música</a>
+			<p class="hv"><img class="imagen" src="imagenes/trabajardark.png" id="imagen4"><br><br>
+			<a href="#musica">Música</a></p>
 		</b>
 	</div>
 	<div class="text">
 		<b>
-			<h2 id="musica_bailar">Música para bailar</h2><br>
+			<h2 id="musica_bailar">𝑀𝑢𝑠𝑖𝑐𝑎 𝑝𝑎𝑟𝑎 𝑏𝑎𝑖𝑙𝑎𝑟</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/12155830533/playlist/6wGRWbSKGuyx5FmUqZ95ou" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
-			<img class="imagen" src="imagenes/bailardark.png" id="img5"><br><br>
-			<a href="#musica">Música</a>
+			<p class="hv"><img class="imagen" src="imagenes/bailardark.png" id="imagen5"><br><br>
+			<a href="#musica">Música</a></p>
 		</b>
 	</div>
 	<div class="text">
 		<b>
-			<h2 id="musica_entrenar">Música para entrenar</h2><br>
+			<h2 id="musica_entrenar">𝑀𝑢𝑠𝑖𝑐𝑎 𝑝𝑎𝑟𝑎 𝑒𝑛𝑡𝑟𝑒𝑛𝑎𝑟</h2><br>
 			<iframe src="https://open.spotify.com/embed/user/yjuirb4urpu1n14rb2moovo9b/playlist/6HTb8D0hYPBEmxRj9fosmA" width="95%" height="340" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
-			<img class="imagen" src="imagenes/entrenardark.png" id="img6"><br><br>
-			<a href="#musica">Música</a>
+			<p class="hv"><img class="imagen" src="imagenes/entrenardark.png" id="imagen6"><br><br>
+			<a href="#musica">Música</a></p>
 		</b>
 	</div>
-
-<script type="text/javascript">
-	var icon = document.getElementById('icon')
-	icon.onclick = function()
-	{
-		document.body.classList.toggle("dark-theme")
-		if (document.body.classList.contains("dark-theme"))
-		{
-			icon.src = "imagenes/sun.png";
-			img1.src = "imagenes/alegrelight.png";
-			img2.src = "imagenes/relajantelight.png";
-			img3.src = "imagenes/estudiarlight.png";
-			img4.src = "imagenes/trabajarlight.png";
-			img5.src = "imagenes/bailarlight.png";
-			img6.src = "imagenes/entrenarlight.png";
-		}
-		else
-		{
-			icon.src = "imagenes/moon.png";
-			img1.src = "imagenes/alegredark.png";
-			img2.src = "imagenes/relajantedark.png";
-			img3.src = "imagenes/estudiardark.png";
-			img4.src = "imagenes/trabajardark.png";
-			img5.src = "imagenes/bailardark.png";
-			img6.src = "imagenes/entrenardark.png";
-		}
-	}
-</script>
-
 <!---Pie de pagina--->
 <footer>
 	Derechos Reservados &copy; 2021 <br>
-	Diseñado por: Ariel Marrone <br>
-	Email: arielitopco@gmail.com <br>
 	www.SanitatemMentis.com
 </footer>
-
+<!--
+	<script type="text/javascript">
+		let progress = document.getElementById('progressbar');
+		let totalHeight = document.body.scrollHeight - window.innerHeight;
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset / totalHeight)*100;
+			progress.style.height = progressHeight + "%";
+		}
+	</script>-->
 </body>
 </html>

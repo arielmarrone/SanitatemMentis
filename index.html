@@ -10,25 +10,26 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/fontello.css">
 	<script type="text/javascript" src="app.js" defer=""></script>
+	<script src="https://kit.fontawesome.com/ca55ade7b8.js" crossorigin="anonymous"></script>
 	<title>Sanitatem Mentis</title>
 </head>
 <body>
 
 	<!---Barra de navegacion--->
 	<nav class="menu">
-		<label class="logo">Sanitatem mentis</label>
-		<img src="imagenes/moon.png" id="icon">
-		<ul class="items">
+		<label class="logo">𝒮𝒶𝓃𝒾𝓉𝒶𝓉𝑒𝓂 ℳ𝑒𝓃𝓉𝒾𝓈</label>
+		<button class="switch" id="switch">
+			<span><i class="fas fa-sun"></i></span>
+			<span><i class="fas fa-moon"></i></span>
+		</button>
+		<!--<ul class="items">
 			<li class="active"><a href="index.html">Inicio</a></li>
 			<li><a href="consejos.html">Consejos</a></li>
-			<li><a href="musica.html">Musica</a></li>
-			<li><a href="meditacion.html">Meditacion</a></li>
-			<li><a href="caminata.html">Caminata</a></li>
-			
-		</ul>
-		<span class="boton_menu">
-			<i class="icon-menu"></i>
-		</span>
+			<li><a href="musica.html">Música</a></li>
+			<li><a href="meditacion.html">Meditación</a></li>
+			<li><a href="caminata.html">Caminata</a></li>			
+		</ul>-->
+		
 	</nav>
 
 	<!---Titulo--->
@@ -38,7 +39,7 @@
 		</b>
 	</div>
 
-	<!--Container-->
+	<!--Tarjetas-->
 	<div class="container">
 		<div class="box">
 			<span></span>
@@ -51,7 +52,7 @@
 		<div class="box">
 			<span></span>
 			<div class="content">
-				<h2>Musica</h2>
+				<h2>Música</h2>
 				<p>Entrá y fijate toda la musica que tenemos para lo que vos necesites, para cuando te sientas alegre, relajado, o para cuando estes estudiando, trabajando o entrenando.</p>
 				<a href="musica.html">Vamos!</a>
 			</div>
@@ -59,7 +60,7 @@
 		<div class="box">
 			<span></span>
 			<div class="content">
-				<h2>Meditacion</h2>
+				<h2>Meditación</h2>
 				<p>Esta seccion está dedicada a la meditación y sus tipos. En tus ratos libres probá a hacer alguna, son bastante entretenidas y te ayudan a concentrarte y a relajarte.</p>
 				<a href="meditacion.html">Vamos!</a>
 			</div>
@@ -72,32 +73,19 @@
 				<a href="caminata.html">Vamos!</a>
 			</div>
 		</div>
-		
+		<div class="box">
+			<span></span>
+			<div class="content">
+				<h2>Sobre Nosotros</h2>
+				<p>Si te interesa nuestro material podés saber mas sobre nosotros, quienes somos, porque hacemos lo que hacemos y varios datos mas.</p>
+				<a href="sobrenosotros.html">Vamos!</a>
+			</div>
+		</div>
 	</div>
-
-<!---Boton modo oscuro--->
-<script class="active" type="text/javascript">
-	var icon = document.getElementById('icon')
-	icon.onclick = function()
-	{
-		document.body.classList.toggle("dark-theme")
-		if (document.body.classList.contains("dark-theme"))
-		{
-			icon.src = "imagenes/sun.png";
-		}
-		else
-		{
-			icon.src = "imagenes/moon.png";
-		}
-	}
-</script>
-
 <!---Pie de pagina--->
 <footer>
 	Derechos Reservados &copy; 2021 <br>
-	Diseñado por: Ariel Marrone <br>
-	Email: arielitopco@gmail.com <br>
-	www.SanitatemMentis.com
+	www.SanitatemMentis.com.ar
 </footer>
 
 </body>

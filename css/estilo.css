@@ -12,7 +12,7 @@
 	--fourth-color: #F5B3E8;
 	--fifth-color: #FFFFFF;
 }
-.dark-theme{
+.dark{
 	--primary-color: #1D594D;
 	--secondary-color: #FFFFFF;
 	--third-color: #1BA67C;
@@ -21,9 +21,64 @@
 }
 /*Variables de colores*/
 body {
+	transition: 1s;
 	font-family: 'Raleway', sans-serif;
 	background: var(--third-color);
 }
+body.dark{
+	transition: 1s;
+	background: var(--third-color);
+}
+/*Scrollbar
+::-webkit-scrollbar{
+	width: 0;
+}
+#scrollPath{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(0, 0, 0, 1);
+}
+#progressbar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(to top,#008aff,#00ffe7);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate{
+	0%,100%{
+		filter: hue-rotate(0deg);
+	}
+	50%{
+		filter: hue-rotate(360deg);
+	}
+}
+#progressbar:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 100%;
+	background: linear-gradient(to top,#008aff,#00ffe7);
+	filter: blur(10px);
+}
+#progressbar:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 100%;
+	background: linear-gradient(to top,#008aff,#00ffe7);
+	filter: blur(30px);
+}
+Scrollbar*/
 /*Tarjetas Inicio*/
 .container{
 	position: relative;
@@ -35,7 +90,7 @@ body {
 }
 .container .box{
 	position: relative;
-	width: 270px;
+	width: 250px;
 	height: 400px;
 	color: var(--secondary-color);
 	background: var(--primary-color);
@@ -55,7 +110,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(45deg, #ffbc00, #ff0058);
+	background: linear-gradient(45deg, #FF8600, #FF0000);
 }
 .container .box::after{
 	content: '';
@@ -64,20 +119,24 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(45deg, #ffbc00, #ff0058);
+	background: linear-gradient(45deg, #FF8600, #FF0000);
 	filter: blur(30px);
 }
 .container .box:nth-child(2)::before,
 .container .box:nth-child(2)::after{
-	background: linear-gradient(315deg, #03a9f4, #ff0058);
+	background: linear-gradient(315deg, #8AFF05, #F5FF00);
 }
 .container .box:nth-child(3)::before,
 .container .box:nth-child(3)::after{
-	background: linear-gradient(315deg, #4dff03, #00d0ff);
+	background: linear-gradient(45deg, #00FFF7, #04FF00);
 }
 .container .box:nth-child(4)::before,
 .container .box:nth-child(4)::after{
-	background: linear-gradient(315deg, #03a9f4, #ffbc00);
+	background: linear-gradient(315deg, #9000FF, #000BF0);
+}
+.container .box:nth-child(5)::before,
+.container .box:nth-child(5)::after{
+	background: linear-gradient(45deg, #FF0000, #FF00FF);
 }
 .container .box span{
 	position: absolute;
@@ -125,6 +184,7 @@ body {
 /*Tarjetas Inicio*/
 /*Barra de Navegacion*/
 .menu{
+	transition: 1s;
 	background: var(--primary-color);
 	height: 75px;
 	width: 100%;
@@ -134,15 +194,54 @@ body {
 	border-bottom: 1px solid black;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 }
+/*Switch boton Dark Mode*/
+.switch{
+	background: #343D5B;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+	margin-right: 25px;
+	
+}
+.switch span{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		display: block;
+		background: none;
+		color: #fff;
+}
+.switch::after{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: #f1f1f1;
+	top: 0;
+	left: 0;
+	right: unset;
+	border-radius: 100px;
+	transition: .3s ease all;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active{
+	background: orange;
+	color: #000;
+}
+.switch.active::after{
+	right: 0;
+	left: unset;
+}
+/*Switch boton Dark Mode*/
 .logo{
 	color: var(--secondary-color);
 	font-size: 35px;
 	padding: 0 80px;
 	font-weight: bold;
-}
-#icon{
-	width: 30px;
-	cursor: pointer;
 }
 .items{
 	display: flex;
@@ -233,15 +332,19 @@ ul.show{
 /*Barra de Navegacion*/
 /*Texto de la pagina*/
 .text{
+	transition: 1s;
 	flex: 2;
 	padding: 25px;
 	background-color: var(--fourth-color);
 	margin: 15px;
-	text-align: center;
 	box-shadow: 5px 5px 5px;	
 	border-radius: 25px;
 }
+.rutina{
+	text-align: center;
+}
 .text a{
+	text-align: center;
 	color: var(--secondary-color);
 	text-decoration: none;
 	border-bottom: 1px solid var(--third-color);
@@ -251,22 +354,25 @@ ul.show{
 	transition: .4s;
 	border-radius: 5px;
 }
-.text h2, h3, p{
+.text h2, .text h3{
+	text-align: center;
+	color: var(--secondary-color);
+}
+.text p{
 	color: var(--secondary-color);
 }
 .imagen{
+	text-align: center;
 	height: 150px;
 	padding: 25px;
-
 }
-.imagen:hover{
-	background-color: rgba(0, 0, 0, 0.3);
-	transition: .4s;
-	border-radius: 5px;
+.hv{
+	text-align: center;
 }
 /*Texto de la pagina*/
 /*Pie de Pagina*/
 footer{
+	transition: 1s;
 	max-width: 100%;
 	background: var(--fifth-color);
 	color: var(--secondary-color);
